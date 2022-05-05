@@ -1,0 +1,46 @@
+class SortingList
+{
+	void sort(int a1[])
+	{
+		int n = a1.length;
+		for(int i=0; i<n-1;i++)
+		{
+			for(int j=0; j<n; j++)
+			{
+				if(a1[j] > a1[j+1])
+				{
+					int temp =a1[j];
+					a1[j]=a1[j+1];
+					a1[j+1]=temp;
+				}
+			}
+		}
+	}
+	void selection(int a1[])
+	{
+		int n = a1.length;
+		for(int i=0; i<=n-1;i++)
+		{
+			int min=i;
+			for(j=j+1; j<n; j++)
+			{
+				if(a1[j]< a1[min])
+				{
+					min = j;
+				}
+				
+				int temp = a1[min];
+				a1[min]=a1[i];
+				a1[i]= temp;
+				
+			}
+		}
+		public void sort1(int a1[])
+		{
+			int n =a1.length;
+			
+			for(int i= n/2; i>=0;i--)
+			{
+				
+				
+				
